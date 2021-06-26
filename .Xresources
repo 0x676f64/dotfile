@@ -1,0 +1,74 @@
+!! Colorscheme
+
+! special
+*.foreground:   #ecf0c1
+*.background:   #0f111b
+*.cursorColor:  #ecf0c1
+
+! black
+*.color0:       #000000
+*.color8:       #686f9a
+
+! red
+*.color1:       #e33400
+*.color9:       #e33400
+
+! green
+*.color2:       #5ccc96
+*.color10:      #5ccc96
+
+! yellow
+*.color3:       #b3a1e6
+*.color11:      #b3a1e6
+
+! blue
+*.color4:       #00a3cc
+*.color12:      #00a3cc
+
+! magenta
+*.color5:       #f2ce00
+*.color13:      #f2ce00
+
+! cyan
+*.color6:       #7a5ccc
+*.color14:      #7a5ccc
+
+! white
+*.color7:       #686f9a
+*.color15:      #f0f1ce
+
+!! Appearence 
+
+URxvt.font: xft:Overpass mono:bold:size=9
+
+Xft.dpi:                        96
+Xft.antialias:                  1
+Xft.autohint:                   1
+Xft.hinting:                    1
+Xft.hintstyle:                  hintslight
+Xft.lcdfilter:                  lcdlight
+Xft.rgba:                       rgb
+
+URxvt*termName:                 rxvt-256color
+URxvt.depth:                    32
+URxvt.transparent:		false		
+
+URxvt*lineSpace:                1
+URxvt.letterSpace:              -1
+URxvt.iso14755:                 false
+URxvt.iso14755_52:              false
+URxvt*geometry:                 75x24
+URxvt.scrollBar:                false
+URxvt*loginShell:               true
+URxvt.internalBorder:           10
+URxvt.perl-ext:	 		default,matcher
+URxvt.url-launcher:             google-chrome-stable
+URxvt.matcher.button: 		1
+
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+
+URxvt*dynamicColors:		true
